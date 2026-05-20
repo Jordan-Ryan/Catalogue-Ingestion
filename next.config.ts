@@ -10,6 +10,10 @@ const nextConfig: NextConfig = {
   ...(isGithubActions ? { output: "export" as const, trailingSlash: true } : {}),
   images: {
     unoptimized: isGithubActions,
+  output: "export",
+  trailingSlash: true,
+  images: {
+    unoptimized: true,
     remotePatterns: [
       {
         protocol: "https",

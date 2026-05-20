@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Catalogue Approval</title>
+    <style>
+      :root { color-scheme: light; }
+      * { box-sizing: border-box; }
+      body { margin: 0; font-family: Inter, Arial, sans-serif; background: #f4f4f5; color: #111; }
+      .wrap { max-width: 1120px; margin: 32px auto; padding: 0 16px; }
+      .card { background: #fff; border: 1px solid #e4e4e7; border-radius: 24px; overflow: hidden; box-shadow: 0 20px 50px rgba(0,0,0,.08); }
+      .top { display:flex; justify-content:space-between; align-items:center; padding:20px 28px; border-bottom:1px solid #e4e4e7; }
+      .logo { background:#111; color:#fff; font-weight:800; letter-spacing:.2em; font-size:12px; padding:8px 12px; border-radius:8px; }
+      .grid { display:grid; grid-template-columns:360px 1fr; }
+      .left { background:#fafafa; border-right:1px solid #e4e4e7; padding:24px; }
+      .hero { width:100%; aspect-ratio:4/5; border-radius:16px; overflow:hidden; border:1px solid #e4e4e7; position:relative; }
+      .hero img { width:100%; height:100%; object-fit:cover; }
+      .pill { position:absolute; top:12px; left:12px; background:#111; color:#fff; font-size:11px; padding:6px 10px; border-radius:999px; }
+      .stats { margin-top:16px; display:grid; grid-template-columns:1fr 1fr; gap:10px; }
+      .stat { border:1px solid #e4e4e7; border-radius:12px; padding:12px; background:#fff; }
+      .k { font-size:11px; letter-spacing:.08em; text-transform:uppercase; color:#71717a; font-weight:700; }
+      .v { margin-top:4px; font-weight:800; }
+      .right { padding:28px; }
+      .fields { margin-top:18px; display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:10px; }
+      .field { border:1px solid #e4e4e7; border-radius:12px; background:#fafafa; padding:12px; }
+      .details { border:1px solid #e4e4e7; border-radius:16px; padding:16px; margin-top:16px; }
+      .actions { margin-top:20px; display:flex; gap:10px; justify-content:flex-end; }
+      button { border:none; border-radius:10px; padding:12px 14px; font-weight:700; cursor:pointer; }
+      .ghost { background:#fff; border:1px solid #d4d4d8; }
+      .soft { background:#f4f4f5; }
+      .primary { background:#111; color:#fff; }
+      @media (max-width: 900px){ .grid{grid-template-columns:1fr;} .left{border-right:none;border-bottom:1px solid #e4e4e7;} .fields{grid-template-columns:1fr 1fr;} }
+      @media (max-width: 600px){ .fields{grid-template-columns:1fr;} .top{padding:16px;} .right,.left{padding:16px;} }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <section class="card">
+        <header class="top"><div style="display:flex;gap:10px;align-items:center"><span class="logo">ASOS</span><strong>Catalogue Approval</strong></div><small>1 of 24 pending review</small></header>
+        <div class="grid">
+          <aside class="left">
+            <div class="hero"><span class="pill">WOMENSWEAR</span><img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=900&q=80" alt="Blazer" /></div>
+            <div class="stats">
+              <div class="stat"><div class="k">SKU</div><div class="v">AS-981237-BLK</div></div>
+              <div class="stat"><div class="k">Size</div><div class="v">UK 10</div></div>
+              <div class="stat"><div class="k">RRP</div><div class="v">$145.00</div></div>
+              <div class="stat"><div class="k">Cost Price</div><div class="v">$74.00</div></div>
+            </div>
+          </aside>
+          <section class="right">
+            <h1>ASOS DESIGN Oversized Structured Blazer</h1>
+            <p style="color:#52525b">Review item content, costing and attributes before publication.</p>
+            <div class="fields">
+              <div class="field"><div class="k">Type</div><div class="v">Blazer</div></div>
+              <div class="field"><div class="k">Name</div><div class="v">Oversized Structured Blazer</div></div>
+              <div class="field"><div class="k">Brand</div><div class="v">ASOS DESIGN</div></div>
+              <div class="field"><div class="k">Colour</div><div class="v">Jet Black</div></div>
+              <div class="field"><div class="k">Margin</div><div class="v">48.97%</div></div>
+              <div class="field"><div class="k">Image</div><div class="v">Primary + 3 additional</div></div>
+            </div>
+            <article class="details"><div class="k">Details</div><p>Single-breasted blazer in premium woven fabric with light shoulder padding, notch lapels, flap pockets and relaxed oversized tailoring.</p></article>
+            <div class="actions"><button class="ghost">Reject</button><button class="soft">Need Changes</button><button class="primary">Approve Item</button></div>
+          </section>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
