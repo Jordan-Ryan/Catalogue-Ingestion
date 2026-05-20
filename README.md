@@ -1,6 +1,7 @@
 # Catalogue Ingestion UI
 
 Catalogue item approval interface built with Next.js and Tailwind CSS.
+ASOS-inspired catalogue item approval interface built with Next.js and Tailwind CSS.
 
 ## Run locally
 
