@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+:root {
+  --bg: #f4f4f4;
+  --surface: #ffffff;
+  --ink: #111111;
+  --ink-muted: #6e6e6e;
+}
+
+body {
+  background: linear-gradient(180deg, #f8f8f8 0%, #f1f1f1 100%);
+  color: var(--ink);
+}
